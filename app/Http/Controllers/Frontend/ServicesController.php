@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers\Frontend;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\Frontend\ServicesController;
 
 class ServicesController extends Controller
 {
-    //
+    public function index() {
+        return view('frontend.services');
+    }
 }

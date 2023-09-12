@@ -7,7 +7,7 @@ use App\Http\Controllers\Frontend\BlogController;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\FeaturesController;
 use App\Http\Controllers\Frontend\PropertiesController;
-use App\Http\Controllers\Frontend\ServiceController;
+use App\Http\Controllers\Frontend\ServicesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,7 +28,7 @@ Route::get('/blog/{blog}', [BlogController::class, 'show'])->name('blog.show');
 Route::get('/contact', [ContactController::class, 'index']) -> name('contact');
 Route::get('/features', [FeaturesController::class, 'index']);
 Route::get('/properties', [PropertiesController::class, 'index']);
-Route::get('/service', [ServiceController::class, 'index']) -> name('services');
+Route::get('/service', [ServicesController::class, 'index']) -> name('services');
 
 
 
